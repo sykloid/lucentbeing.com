@@ -1,0 +1,3 @@
+[submodule "lucentbeing/settings/server"]
+	path = lucentbeing/settings/server
+	url = git@lucentbeing.com:server.lucentbeing.com.git
