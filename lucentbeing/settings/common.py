@@ -19,3 +19,12 @@ USE_I18N = False
 USE_L10N = False
 
 SITE_ID = 1
+
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+)
+
+TEMPLATE_DIRS = (
+    os.path.join(SITE_ROOT, 'templates'),
+)
