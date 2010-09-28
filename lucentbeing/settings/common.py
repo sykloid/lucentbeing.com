@@ -3,7 +3,9 @@
 import os
 
 # Paths and URLs.
-SITE_ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+SITE_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.realpath(__file__)))
+)
 
 ADMINS = (
     ('P.C. Shyamshankar', 'sykora@lucentbeing.com'),
