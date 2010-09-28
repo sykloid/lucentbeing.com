@@ -1,4 +1,7 @@
 *.swp
 *.pyc
 
+dev.db
 environment
+static/admin
+static/content
