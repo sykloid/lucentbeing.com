@@ -46,6 +46,8 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.admin',
+
+    'south',
 )
 
 ROOT_URLCONF = 'lucentbeing.urls'
