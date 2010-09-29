@@ -1,5 +1,7 @@
 <!doctype html>
 
+{% load typogrify_tags %}
+
 <html>
     <head>
         <title>{% block title %}Lucentbeing.com{% endblock title %}</title>
@@ -25,8 +27,10 @@
         </script>
     </head>
     <body>
-        {% block body %}
-        {% endblock body %}
+        {% filter typogrify %}
+            {% block body %}
+            {% endblock body %}
+        {% endfilter %}
     </body>
 </html>
 {# vim:set ft=htmldjango: #}
