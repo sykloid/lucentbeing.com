@@ -1,7 +1,12 @@
 Django==1.2.3
+ReSTinPeace==0.5.2
 South==0.7.2
 Werkzeug==0.6.2
 django-debug-toolbar==0.8.3
 django-extensions==0.5
+django-ripwrap==0.1.0
+django-taggit==0.9.1
+djournal==0.5.1
+docutils==0.7
 ipython==0.10
 wsgiref==0.1.2
