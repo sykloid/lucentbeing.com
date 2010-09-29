@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <header>
+        <hgroup>
+            <h1>Lucentbeing.com</h1>
+        </hgroup>
+        <nav>
+            <ul>
+                {% block navigation %}
+                {% endblock navigation %}
+            </ul>
+        </nav>
+    </header>
+    <div id="canvas">
+        <div id="content">
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </div>
+    <footer>
+    </footer>
+{% endblock body %}
+{# vim:set ft=htmldjango: #}
