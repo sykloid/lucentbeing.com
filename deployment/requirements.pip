@@ -6,6 +6,7 @@ django-debug-toolbar==0.8.3
 django-extensions==0.5
 django-ripwrap==0.1.0
 django-taggit==0.9.1
+git+http://github.com/lcc/django-typogrify.git#egg=django-typogrify
 djournal==0.5.1
 docutils==0.7
 ipython==0.10

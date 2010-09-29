@@ -66,6 +66,7 @@ INSTALLED_APPS = (
     'djournal',
     'ripwrap',
     'taggit',
+    'typogrify',
 )
 
 ROOT_URLCONF = 'lucentbeing.urls'
