@@ -30,5 +30,7 @@ Blog URLs
     Index of all entries tagged with given tag.
 /blog/tag/<slug>/feed/
     Feed for all entries tagged with given tag.
+/blog/sitemap.xml
+    Generated sitemap for all blog pages.
 
 - Any index can have a /feed/ tacked on to its end to give a feed of its items.
