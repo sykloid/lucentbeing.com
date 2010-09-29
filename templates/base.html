@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>{% block title %}Lucentbeing.com{% endblock title %}</title>
+
+        {% block head %}
+            <meta charset="UTF-8">
+        {% endblock head %}
+
+        {% block css %}
+        {% endblock css %}
+
+        <style>
+            {% block styles %}
+            {% endblock styles %}
+        </style>
+
+        {% block js %}
+        {% endblock js %}
+
+        <script>
+            {% block scripts %}
+            {% endblock scripts %}
+        </script>
+    </head>
+    <body>
+        {% block body %}
+        {% endblock body %}
+    </body>
+</html>
+{# vim:set ft=htmldjango: #}
