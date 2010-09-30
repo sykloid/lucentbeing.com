@@ -21,14 +21,11 @@
             <time datetime="{{ entry.created|date:"c" }}" pubdate>
                 {{ entry.created|naturalday:"Y-m-d"|capfirst }}
             </time>
-            <div id="tags">
-                <ul>
-                    {% for tag in entry.tags.all %}
-                        <li>
-                            <a href="{% url djournal_tagged_entry_index tag.slug %}">{{ tag }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
+            <div class="tags">
+                {% for tag in entry.tags.all %}
+                    <a href="{% url djournal_tagged_entry_index tag.slug %}">{{ tag }}</a>
+                    {% if not forloop.last %}/{% endif %}
+                {% endfor %}
             </div>
         </footer>
     </article>
