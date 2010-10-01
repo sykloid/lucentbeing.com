@@ -124,3 +124,13 @@ body > footer {
 .entry > .body p {
     padding: 5px 0;
 }
+
+.entry > .body h1,
+.entry > .body h2,
+.entry > .body h3,
+.entry > .body h4,
+.entry > .body h5,
+.entry > .body h6 {
+    padding: 5px 0;
+}
+
