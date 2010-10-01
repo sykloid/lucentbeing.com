@@ -47,6 +47,28 @@ blockquote {
 
 }
 
+ul {
+    list-style-type: disc;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+
+ul, ol, dl {
+    margin: 5px 0;
+}
+
+li ul, li ol {
+    margin-left: 1em;
+}
+
+dd {
+    border-left: 3px solid #DDDDDD;
+    margin-left: 2em;
+    padding-left: 0.25em;
+}
+
 h1 {
     font-size: 2.00em;
 }
