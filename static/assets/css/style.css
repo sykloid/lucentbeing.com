@@ -63,6 +63,22 @@ li ul, li ol {
     margin-left: 1em;
 }
 
+ol.upperalpha {
+    list-style-type: upper-latin;
+}
+
+ol.loweralpha {
+    list-style-type: lower-latin;
+}
+
+ol.upperroman {
+    list-style-type: upper-roman;
+}
+
+ol.lowerroman {
+    list-style-type: lower-roman;
+}
+
 dd {
     border-left: 3px solid #DDDDDD;
     margin-left: 2em;
