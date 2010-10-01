@@ -25,17 +25,26 @@ sub {
 }
 
 pre {
+    border-left: 3px solid #DDDDDD;
     font-family: "InconsolataMedium";
     font-size: 0.85em;
     line-height: 1.5em;;
-    padding: 5px;
     margin: 5px;
-    border-left: 3px solid #DDDDDD;
+    padding: 5px;
 }
 
 tt {
     background: #E8E8E8;
     font-family: "InconsolataMedium";
+}
+
+blockquote {
+    background: #EEEEEE;
+    font-family: "AurulentSansItalic";
+    font-size: 0.85em;
+    margin: 5px;
+    padding: 5px;
+
 }
 
 h1 {
@@ -155,11 +164,11 @@ body > footer {
 /* Entry Footer */
 
 .entry > footer {
-    padding-top: 10px;
     border-top: solid 1px #DDDDDD;
-    margin-top: 10px;
-    font-size: 0.75em;;
     color: #AFAFAF;
+    font-size: 0.75em;;
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .entry > footer > .tags {
@@ -174,14 +183,14 @@ body > footer {
 
 .footnote {
     font-size: 0.75em;
-    width: 100%;
     line-height: 1.5em;
     padding-top: 100px;
+    width: 100%;
 }
 
 .footnote .label {
-    padding-top: 5px;
     padding-right: 10px;
+    padding-top: 5px;
     text-align: right;
     width: 2em;
 }
