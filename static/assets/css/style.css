@@ -115,3 +115,12 @@ body > footer {
 .entry > header > hgroup h2 {
     color: #AFAFAF;
 }
+
+.entry > .body {
+    line-height: 1.5em;
+    padding-top: 10px;
+}
+
+.entry > .body p {
+    padding: 5px 0;
+}
