@@ -23,3 +23,11 @@ sub {
     font-size: 0.75em;
     vertical-align: sub;
 }
+
+/* Page Structure */
+
+#canvas {
+    margin: 0 auto;
+    width: 512px;
+}
+
