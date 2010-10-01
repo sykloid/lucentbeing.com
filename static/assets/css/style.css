@@ -56,3 +56,16 @@ body > header > nav > ul li {
     display: inline;
     margin: 0px 7px;
 }
+
+/* Footer */
+
+body > footer {
+    border-top: solid 1px #DDDDDD;
+    color: #888888;
+    font-size: 0.75em;;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    padding: 0px 5px;
+    width: 100%;
+}
