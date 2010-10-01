@@ -171,3 +171,50 @@ body > footer {
     text-align: right;
     width: 2em;
 }
+
+/* Image, figure, object and caption styling, with docutils class definitions. */
+
+img {
+    border: 5px solid #666666;
+}
+
+img.align-left, .figure.align-left, object.align-left {
+    clear: left;
+    float: left;
+    margin-right: 1em;
+}
+
+img.align-right, .figure.align-right, object.align-right {
+    clear: right;
+    float: right;
+    margin-left: 1em;
+}
+
+img.align-center, .figure.align-center, object.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    clear: both;
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+div.align-right {
+    text-align: left;
+}
+
+p.caption {
+    color: #444444;
+    font-size: 0.75em;
+    font-style: italic;
+}
