@@ -101,3 +101,17 @@ body > footer {
     padding: 0px 5px;
     width: 100%;
 }
+
+/* Entry Structure */
+
+.entry > header > hgroup {
+    text-align: center;
+}
+
+.entry > header > hgroup h1 a {
+    color: #000000;
+}
+
+.entry > header > hgroup h2 {
+    color: #AFAFAF;
+}
