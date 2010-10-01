@@ -233,6 +233,46 @@ body > footer {
     width: 2em;
 }
 
+/* Index */
+
+#index {
+    font-size: 0.80em;
+    line-height: 1.5em;
+    width: 100%;
+}
+
+#index .date {
+    color: #AFAFAF;
+    padding-right: 10px;
+    text-align: right;
+    vertical-align: middle;
+    width: 15%;
+}
+
+#index .tags {
+    float: right;
+    padding-left: 10px;
+    text-align: right;
+}
+
+#index tr {
+    border-bottom: solid 1px #DDDDDD;
+}
+
+#index tr:last-child {
+    border: none;
+}
+
+#index td {
+    padding: 2px 0px;
+}
+
+#tag {
+    font-size: 0.75em;
+    padding: 5px;
+    text-align: center;
+}
+
 /* Image, figure, object and caption styling, with docutils class definitions. */
 
 img {
