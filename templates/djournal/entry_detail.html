@@ -2,7 +2,7 @@
 
 {% load humanize %}
 
-{% block title %}{{ entry.title }} | {{ block.super }}{% endblock title %}
+{% block title %}{{ entry.title }} :: {{ block.super }}{% endblock title %}
 
 {% block content %}
     <article id="entry-{{ entry.id }}" class="entry">
