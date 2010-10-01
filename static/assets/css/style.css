@@ -151,3 +151,23 @@ body > footer {
 .entry > footer > .tags {
     display: inline;
 }
+
+/* Footnotes */
+
+.entry .body .footnote:first-of-type {
+    border-top: 1px solid #DDDDDD;
+}
+
+.footnote {
+    font-size: 0.75em;
+    width: 100%;
+    line-height: 1.5em;
+    padding-top: 100px;
+}
+
+.footnote .label {
+    padding-top: 5px;
+    padding-right: 10px;
+    text-align: right;
+    width: 2em;
+}
