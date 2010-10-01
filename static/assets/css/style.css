@@ -104,6 +104,8 @@ body > footer {
 
 /* Entry Structure */
 
+/* Entry Header */
+
 .entry > header > hgroup {
     text-align: center;
 }
@@ -115,6 +117,8 @@ body > footer {
 .entry > header > hgroup h2 {
     color: #AFAFAF;
 }
+
+/* Entry Body */
 
 .entry > .body {
     line-height: 1.5em;
