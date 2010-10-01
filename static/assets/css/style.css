@@ -134,3 +134,16 @@ body > footer {
     padding: 5px 0;
 }
 
+/* Entry Footer */
+
+.entry > footer {
+    padding-top: 10px;
+    border-top: solid 1px #DDDDDD;
+    margin-top: 10px;
+    font-size: 0.75em;;
+    color: #AFAFAF;
+}
+
+.entry > footer > .tags {
+    display: inline;
+}
