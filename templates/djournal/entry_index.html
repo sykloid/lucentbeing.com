@@ -13,14 +13,16 @@
                         {{ entry.created|naturalday:"Y-m-d"|capfirst }}
                     </time>
                 </td>
-                <td class="title">
-                    <a href="{% url djournal_entry_detail entry.slug %}">{{ entry.title }}</a>
-                </td>
-                <td class="tags">
-                    {% for tag in entry.tags.all %}
-                        <a href="{% url djournal_tagged_entry_index tag.slug %}">{{ tag }}</a>
-                        {% if not forloop.last %}/{% endif %}
-                    {% endfor %}
+                <td>
+                    <span class="title">
+                        <a href="{% url djournal_entry_detail entry.slug %}">{{ entry.title }}</a>
+                    </span>
+                    <span class="tags">
+                        {% for tag in entry.tags.all %}
+                            <a href="{% url djournal_tagged_entry_index tag.slug %}">{{ tag }}</a>
+                            {% if not forloop.last %}/{% endif %}
+                        {% endfor %}
+                    </span>
                 </td>
             </tr>
         {% endfor %}
