@@ -31,3 +31,28 @@ sub {
     width: 512px;
 }
 
+/* Header */
+
+body > header {
+    border-bottom: solid 1px #DDDDDD;
+    font-size: 0.75em;;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+body > header > h1 {
+    display: inline;
+    font-size: 1em;
+    margin-left: 10px;
+    position: absolute;
+}
+
+body > header > nav {
+    text-align: right;
+}
+
+body > header > nav > ul li {
+    display: inline;
+    margin: 0px 7px;
+}
