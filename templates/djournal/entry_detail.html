@@ -23,8 +23,7 @@
             </time>
             <div class="tags">
                 {% for tag in entry.tags.all %}
-                    <a href="{% url djournal_tagged_entry_index tag.slug %}">{{ tag }}</a>
-                    {% if not forloop.last %}/{% endif %}
+                    / <a href="{% url djournal_tagged_entry_index tag.slug %}">{{ tag }}</a>
                 {% endfor %}
             </div>
         </footer>
