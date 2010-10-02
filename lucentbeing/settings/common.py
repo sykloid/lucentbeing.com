@@ -61,6 +61,7 @@ INSTALLED_APPS = (
     'django.contrib.syndication',
     'django.contrib.sitemaps',
 
+    'disqus',
     'south',
 
     'djournal',
