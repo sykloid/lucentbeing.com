@@ -5,6 +5,9 @@
 {% block title %}Index :: {{ block.super }}{% endblock title %}
 
 {% block content %}
+    <hgroup id="index-title">
+        <h1>All Entries</h1>
+    </hgroup>
     <table id="index">
         {% for entry in entries %}
             <tr>
