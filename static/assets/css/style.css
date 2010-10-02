@@ -223,6 +223,14 @@ body > footer {
     display: inline;
 }
 
+/* Comments */
+
+.entry .comments {
+    border-top: solid 1px #DFDFDF;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
 /* Footnotes */
 
 .entry .body .footnote:first-of-type {
