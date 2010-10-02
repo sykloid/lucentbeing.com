@@ -4,6 +4,11 @@
 
 {% block title %}Entries tagged with "{{ tag.name }}" | {{ block.super }}{% endblock title %}
 
+{% block navigation %}
+    {{ block.super }}
+    <li><a class="tag" href="feed">Subscribe to entries tagged "{{ tag }}"</a></li>
+{% endblock navigation %}
+
 {% block content %}
     <hgroup id="index-title">
         <h1>Entries tagged with "{{ tag.name }}"</h1>

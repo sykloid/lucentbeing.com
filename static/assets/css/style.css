@@ -152,6 +152,10 @@ body > header > nav > ul li {
     margin: 0px 7px;
 }
 
+a.feed {
+    color: #F79937;
+}
+
 /* Footer */
 
 body > footer {

@@ -4,6 +4,12 @@
 
 {% block title %}Index :: {{ block.super }}{% endblock title %}
 
+{% block navigation %}
+    {{ block.super }}
+    <li><a class="feed" href="feed">Subscribe</a></li>
+{% endblock navigation %}
+
+
 {% block content %}
     <hgroup id="index-title">
         <h1>All Entries</h1>
