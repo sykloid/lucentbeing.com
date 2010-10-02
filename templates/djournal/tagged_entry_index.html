@@ -5,7 +5,7 @@
 {% block title %}Entries tagged with "{{ tag.name }}" | {{ block.super }}{% endblock title %}
 
 {% block content %}
-    <hgroup id="tag">
+    <hgroup id="index-title">
         <h1>Entries tagged with "{{ tag.name }}"</h1>
     </hgroup>
     <table id="index">
@@ -22,7 +22,9 @@
                     </span>
                     <span class="tags">
                         {% for tag in entry.tags.all %}
-                            <a href="{% url djournal_tagged_entry_index tag.slug %}">{{ tag }}</a>
+                            <a class="tag" href="{% url djournal_tagged_entry_index tag.slug %}">
+                                {{ tag }}
+                            </a>
                             {% if not forloop.last %}/{% endif %}
                         {% endfor %}
                     </span>
