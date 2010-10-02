@@ -1,8 +1,8 @@
 /* Stylesheet for Lucentbeing.com */
 
 body {
-    background-color: #F4F4F4;
-    color: #000000;
+    background-color: #FAFAFA;
+    color: #333333;
     font-family: "AurulentSansRegular";
 }
 
@@ -25,16 +25,17 @@ sub {
 }
 
 pre {
-    border-left: 3px solid #DDDDDD;
+    background-color: #EEEEEE;
+    border-left: 3px solid #DFDFDF;
     font-family: "InconsolataMedium";
-    font-size: 0.85em;
+    font-size: 0.80em;
     line-height: 1.5em;;
     margin: 5px;
     padding: 5px;
 }
 
 tt {
-    background: #E8E8E8;
+    background: #EEEEEE;
     font-family: "InconsolataMedium";
 }
 
@@ -80,7 +81,7 @@ ol.lowerroman {
 }
 
 dd {
-    border-left: 3px solid #DDDDDD;
+    border-left: 3px solid #DFDFDF;
     margin-left: 2em;
     padding-left: 0.25em;
 }
@@ -110,6 +111,7 @@ h6 {
 }
 
 a, a:active, a:link, a:visited {
+    color: #4D8BAC;
     text-decoration: none;
 }
 
@@ -127,7 +129,7 @@ a:hover {
 /* Header */
 
 body > header {
-    border-bottom: solid 1px #DDDDDD;
+    border-bottom: solid 1px #DFDFDF;
     font-size: 0.75em;;
     height: 30px;
     line-height: 30px;
@@ -153,8 +155,8 @@ body > header > nav > ul li {
 /* Footer */
 
 body > footer {
-    border-top: solid 1px #DDDDDD;
-    color: #888888;
+    border-top: solid 1px #DFDFDF;
+    color: #AAAAAA;
     font-size: 0.75em;;
     height: 30px;
     line-height: 30px;
@@ -176,7 +178,7 @@ body > footer {
 }
 
 .entry > header > hgroup h2 {
-    color: #AFAFAF;
+    color: #AAAAAA;
 }
 
 /* Entry Body */
@@ -202,7 +204,7 @@ body > footer {
 /* Entry Footer */
 
 .entry > footer {
-    border-top: solid 1px #DDDDDD;
+    border-top: solid 1px #DFDFDF;
     color: #AFAFAF;
     font-size: 0.75em;;
     margin-top: 10px;
@@ -216,7 +218,7 @@ body > footer {
 /* Footnotes */
 
 .entry .body .footnote:first-of-type {
-    border-top: 1px solid #DDDDDD;
+    border-top: 1px solid #DFDFDF;
 }
 
 .footnote {
@@ -256,7 +258,7 @@ body > footer {
 }
 
 #index tr {
-    border-bottom: solid 1px #DDDDDD;
+    border-bottom: solid 1px #DFDFDF;
 }
 
 #index tr:last-child {
@@ -267,7 +269,7 @@ body > footer {
     padding: 2px 0px;
 }
 
-#tag {
+#index-title {
     font-size: 0.75em;
     padding: 5px;
     text-align: center;
@@ -318,4 +320,10 @@ p.caption {
     color: #444444;
     font-size: 0.75em;
     font-style: italic;
+}
+
+/* Tags */
+
+a.tag {
+    color: #BF57B8;
 }
