@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% load humanize %}
+
+{% block body %}
+    <div id="front-page">
+        <hgroup>
+            <h1><a href="{% url lucentbeing_index %}">Lucentbeing.com</a></h1>
+            <h2>Zippity Doo Dah.</h2>
+        </hgroup>
+        <section id="front-matter">
+            <ul>
+                <li><a href="{% url djournal_entry_index %}">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a class="feed" href="#">Subscribe</a></li>
+            </ul>
+        </section>
+        <article id="entry-{{ entry.id }}" class="entry">
+            <header>
+                <hgroup>
+                    <h1 class="title">
+                        <a href="{% url djournal_entry_detail entry.slug %}">{{ entry.title }}</a>
+                    </h1>
+                    <h2 class="subtitle">{{ entry.subtitle }}</h2>
+                </hgroup>
+            </header>
+            <section class="body">
+                {% if entry.teaser %}
+                    {{ entry.teaser_html|safe }}
+                    <div class="continue">
+                        <a href="{% url djournal_entry_detail entry.slug %}">Continue</a>
+                    </div>
+                {% else %}
+                    {{ entry.body_html|safe }}
+                {% endif %}
+            </section>
+            <footer>
+                <time datetime="{{ entry.created|date:"c" }}" pubdate>
+                    {{ entry.created|naturalday:"Y-m-d"|capfirst }}
+                </time>
+                <div class="tags">
+                    {% for tag in entry.tags.all %}
+                        / <a class="tag" href="{% url djournal_tagged_entry_index tag.slug %}">
+                            {{ tag }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </footer>
+        </article>
+    </div>
+{% endblock body %}
+
