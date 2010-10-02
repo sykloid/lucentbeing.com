@@ -1,0 +1,13 @@
+/* @font-face declaration for Inconsolata. */
+
+@font-face {
+	font-family: 'InconsolataMedium';
+	src: url('Inconsolata-webfont.eot');
+	src: local('☺'),
+         url('Inconsolata-webfont.woff') format('woff'),
+         url('Inconsolata-webfont.ttf') format('truetype'),
+         url('Inconsolata-webfont.svg#webfontAOsRw1AW') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

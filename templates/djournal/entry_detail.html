@@ -2,7 +2,7 @@
 
 {% load humanize %}
 
-{% block title %}{{ entry.title }} | {{ block.super }}{% endblock title %}
+{% block title %}{{ entry.title }} :: {{ block.super }}{% endblock title %}
 
 {% block content %}
     <article id="entry-{{ entry.id }}" class="entry">
@@ -21,14 +21,12 @@
             <time datetime="{{ entry.created|date:"c" }}" pubdate>
                 {{ entry.created|naturalday:"Y-m-d"|capfirst }}
             </time>
-            <div id="tags">
-                <ul>
-                    {% for tag in entry.tags.all %}
-                        <li>
-                            <a href="{% url djournal_tagged_entry_index tag.slug %}">{{ tag }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
+            <div class="tags">
+                {% for tag in entry.tags.all %}
+                    / <a class="tag" href="{% url djournal_tagged_entry_index tag.slug %}">
+                        {{ tag }}
+                    </a>
+                {% endfor %}
             </div>
         </footer>
     </article>
