@@ -7,6 +7,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'^$', 'lucentbeing.core.views.index', name='lucentbeing_index'),
     (r'^admin/', include(admin.site.urls)),
     (r'^blog/', include('djournal.urls')),
 )
