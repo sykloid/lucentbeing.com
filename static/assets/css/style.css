@@ -152,6 +152,10 @@ body > header > nav > ul li {
     margin: 0px 7px;
 }
 
+a#site-title {
+    color: #000000;
+}
+
 a.feed {
     color: #F79937;
 }
