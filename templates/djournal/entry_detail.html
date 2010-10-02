@@ -1,5 +1,6 @@
 {% extends "djournal/base.html" %}
 
+{% load disqus_tags %}
 {% load humanize %}
 
 {% block title %}{{ entry.title }} :: {{ block.super }}{% endblock title %}
@@ -29,6 +30,9 @@
                 {% endfor %}
             </div>
         </footer>
+        <section class="comments">
+            {% disqus_show_comments %}
+        </section>
     </article>
 {% endblock content %}
 {# vim:set ft=htmldjango #}
