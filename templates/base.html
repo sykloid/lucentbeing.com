@@ -1,5 +1,6 @@
 <!doctype html>
 
+{% load disqus_tags %}
 {% load typogrify_tags %}
 
 <html>
@@ -35,6 +36,7 @@
 
         {% block js %}
             <script src="{{ STATIC_URL }}/assets/js/modernizr-1.5.min.js"></script>
+            {% disqus_dev %}
         {% endblock js %}
 
         <script>
