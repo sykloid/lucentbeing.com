@@ -331,3 +331,49 @@ p.caption {
 a.tag {
     color: #BF57B8;
 }
+
+/* Front Page */
+
+#front-page {
+    margin: 0 auto;
+    width: 512px;
+}
+
+#front-page > hgroup {
+    text-align: right;
+    margin-bottom: 10px;
+    margin-top: 2em;
+}
+
+#front-page > hgroup > h1 a {
+    color: #000000;
+}
+
+#front-page > hgroup > h2 {
+    color: #AAAAAA;
+}
+
+.continue {
+    font-size: 0.75em;
+    text-align: right;
+}
+
+#front-matter {
+    font-size: 0.75em;
+    border-bottom: solid 1px #DFDFDF;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-top: solid 1px #DFDFDF;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#front-matter ul {
+    list-style: none;
+    text-align: center;
+}
+
+#front-matter ul li {
+    display: inline;
+    padding: 7px;
+}
