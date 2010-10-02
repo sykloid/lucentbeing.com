@@ -1,9 +1,10 @@
 Django==1.2.3
-Pygments=1.3.1
+Pygments==1.3.1
 ReSTinPeace==0.5.2
 South==0.7.2
 Werkzeug==0.6.2
 django-debug-toolbar==0.8.3
+django-disqus==0.3.2
 django-extensions==0.5
 django-ripwrap==0.1.0
 django-taggit==0.9.1
