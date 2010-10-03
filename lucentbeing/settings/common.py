@@ -62,6 +62,7 @@ INSTALLED_APPS = (
     'django.contrib.sitemaps',
 
     'disqus',
+    'gunicorn',
     'south',
 
     'djournal',
