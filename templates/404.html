@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}404 :: {{ block.super }}{% endblock title %}
+
+{% block styles %}
+    .error {
+        margin-top: 1em;
+        text-align: center;
+    }
+{% endblock styles %}
+
+{% block body %}
+    <div class="error">
+        <h1>404</h1>
+        <h2>Page Not Found.</h2>
+    </div>
+{% endblock body %}
