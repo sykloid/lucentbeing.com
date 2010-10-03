@@ -1,0 +1,391 @@
+/* Stylesheet for Lucentbeing.com */
+
+body {
+    background-color: #FAFAFA;
+    color: #333333;
+    font-family: "AurulentSansRegular";
+}
+
+strong {
+    font-family: "AurulentSansBold";
+}
+
+em {
+    font-family: "AurulentSansItalic";
+}
+
+sup {
+    font-size: 0.75em;
+    vertical-align: super;
+}
+
+sub {
+    font-size: 0.75em;
+    vertical-align: sub;
+}
+
+pre {
+    background-color: #EEEEEE;
+    border-left: 3px solid #DFDFDF;
+    font-family: "InconsolataMedium";
+    font-size: 0.80em;
+    line-height: 1.5em;;
+    margin: 5px;
+    padding: 5px;
+}
+
+tt {
+    background: #EEEEEE;
+    font-family: "InconsolataMedium";
+}
+
+blockquote {
+    background: #EEEEEE;
+    font-family: "AurulentSansItalic";
+    font-size: 0.85em;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+
+ul, ol, dl {
+    margin: 5px 0;
+}
+
+li ul, li ol {
+    margin-left: 1em;
+}
+
+ol.upperalpha {
+    list-style-type: upper-latin;
+}
+
+ol.loweralpha {
+    list-style-type: lower-latin;
+}
+
+ol.upperroman {
+    list-style-type: upper-roman;
+}
+
+ol.lowerroman {
+    list-style-type: lower-roman;
+}
+
+dd {
+    border-left: 3px solid #DFDFDF;
+    margin-left: 2em;
+    padding-left: 0.25em;
+}
+
+h1 {
+    font-size: 2.00em;
+}
+
+h2 {
+    font-size: 1.50em;
+}
+
+h3 {
+    font-size: 1.37em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1.12em;
+}
+
+h6 {
+    font-size: 1.06em;
+}
+
+a, a:active, a:link, a:visited {
+    color: #4D8BAC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Page Structure */
+
+#canvas {
+    margin: 0 auto;
+    width: 512px;
+}
+
+/* Header */
+
+body > header {
+    border-bottom: solid 1px #DFDFDF;
+    font-size: 0.75em;;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+body > header > h1 {
+    display: inline;
+    font-size: 1em;
+    margin-left: 10px;
+    position: absolute;
+}
+
+body > header > nav {
+    text-align: right;
+}
+
+body > header > nav > ul li {
+    display: inline;
+    margin: 0px 7px;
+}
+
+a#site-title {
+    color: #000000;
+}
+
+a.feed {
+    color: #F79937;
+}
+
+/* Footer */
+
+body > footer {
+    border-top: solid 1px #DFDFDF;
+    color: #AAAAAA;
+    font-size: 0.75em;;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    padding: 0px 5px;
+    width: 100%;
+}
+
+/* Entry Structure */
+
+/* Entry Header */
+
+.entry > header > hgroup {
+    text-align: center;
+}
+
+.entry > header > hgroup h1 a {
+    color: #000000;
+}
+
+.entry > header > hgroup h2 {
+    color: #AAAAAA;
+}
+
+/* Entry Body */
+
+.entry > .body {
+    line-height: 1.5em;
+    padding-top: 10px;
+}
+
+.entry > .body p {
+    padding: 5px 0;
+}
+
+.entry > .body h1,
+.entry > .body h2,
+.entry > .body h3,
+.entry > .body h4,
+.entry > .body h5,
+.entry > .body h6 {
+    padding: 5px 0;
+}
+
+/* Entry Footer */
+
+.entry > footer {
+    border-top: solid 1px #DFDFDF;
+    color: #AFAFAF;
+    font-size: 0.75em;;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.entry > footer > .tags {
+    display: inline;
+}
+
+/* Comments */
+
+.entry .comments {
+    border-top: solid 1px #DFDFDF;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+/* Footnotes */
+
+.entry .body .footnote:first-of-type {
+    border-top: 1px solid #DFDFDF;
+}
+
+.footnote {
+    font-size: 0.75em;
+    line-height: 1.5em;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.footnote .label {
+    padding-right: 10px;
+    padding-top: 5px;
+    text-align: right;
+    width: 2em;
+}
+
+/* Index */
+
+#index {
+    font-size: 0.80em;
+    line-height: 1.5em;
+    width: 100%;
+}
+
+#index .date {
+    color: #AFAFAF;
+    padding-right: 10px;
+    text-align: right;
+    vertical-align: middle;
+    width: 15%;
+}
+
+#index .tags {
+    float: right;
+    padding-left: 10px;
+    text-align: right;
+}
+
+#index tr {
+    border-bottom: solid 1px #DFDFDF;
+}
+
+#index tr:last-child {
+    border: none;
+}
+
+#index td {
+    padding: 2px 0px;
+}
+
+#index-title {
+    font-size: 0.75em;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Image, figure, object and caption styling, with docutils class definitions. */
+
+img {
+    border: 5px solid #666666;
+}
+
+img.align-left, .figure.align-left, object.align-left {
+    clear: left;
+    float: left;
+    margin-right: 1em;
+}
+
+img.align-right, .figure.align-right, object.align-right {
+    clear: right;
+    float: right;
+    margin-left: 1em;
+}
+
+img.align-center, .figure.align-center, object.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    clear: both;
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+div.align-right {
+    text-align: left;
+}
+
+p.caption {
+    color: #444444;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+/* Tags */
+
+a.tag {
+    color: #BF57B8;
+}
+
+/* Front Page */
+
+#front-page {
+    margin: 0 auto;
+    width: 512px;
+}
+
+#front-page > hgroup {
+    text-align: right;
+    margin-bottom: 10px;
+    margin-top: 2em;
+}
+
+#front-page > hgroup > h1 a {
+    color: #000000;
+}
+
+#front-page > hgroup > h2 {
+    color: #AAAAAA;
+}
+
+.continue {
+    font-size: 0.75em;
+    text-align: right;
+}
+
+#front-matter {
+    font-size: 0.75em;
+    border-bottom: solid 1px #DFDFDF;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-top: solid 1px #DFDFDF;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#front-matter ul {
+    list-style: none;
+    text-align: center;
+}
+
+#front-matter ul li {
+    display: inline;
+    padding: 7px;
+}

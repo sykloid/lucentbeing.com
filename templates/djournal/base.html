@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <header>
+        <h1><a id="site-title" href="{% url lucentbeing_index %}">Lucentbeing.com</a></h1>
+        <nav>
+            <ul>
+                {% block navigation %}
+                    <li><a href="{% url djournal_entry_index %}">Index</a></li>
+                {% endblock navigation %}
+            </ul>
+        </nav>
+    </header>
+    <div id="canvas">
+        <div id="content">
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </div>
+    <footer>
+        {% block footer %}
+            Copyright © 2008-2010 P.C. Shyamshankar. This work is under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC-BY-NC-SA</a> license unless otherwise mentioned.
+        {% endblock footer %}
+    </footer>
+{% endblock body %}
+{# vim:set ft=htmldjango: #}

@@ -1,0 +1,54 @@
+<!doctype html>
+
+{% load disqus_tags %}
+{% load typogrify_tags %}
+
+<html>
+    <head>
+        <title>{% block title %}Lucentbeing.com{% endblock title %}</title>
+
+        {% block head %}
+            <meta charset="UTF-8">
+
+            <meta name="description" content="The personal website of P.C. Shyamshankar.">
+            <meta name="author" content="P.C. Shyamshankar">
+            <meta name="Copyright" content="Copyright © 2008-2010 P.C. Shyamshankar. This work is under the CC-BY-NC-SA license unless otherwise mentioned.">
+
+            <meta name="DC.title" content="Lucentbeing.com">
+            <meta name="DC.subject" content="The personal website of P.C. Shyamshankar.">
+            <meta name="DC.creator" content="P.C. Shyamshankar">
+
+            <link rel="shortcut icon" href="{{ STATIC_URL }}/assets/img/icon.png">
+        {% endblock head %}
+
+        {% block css %}
+            <link rel="stylesheet" href="{{ STATIC_URL }}/assets/css/reset.css">
+            <link rel="stylesheet" href="{{ STATIC_URL }}/assets/css/style.css">
+            <link rel="stylesheet" href="{{ STATIC_URL }}/assets/css/pygments.css">
+            <link rel="stylesheet" href="{{ STATIC_URL }}/assets/fonts/aurulent/aurulent.css">
+            <link rel="stylesheet" href="{{ STATIC_URL }}/assets/fonts/inconsolata/inconsolata.css">
+        {% endblock css %}
+
+        <style>
+            {% block styles %}
+            {% endblock styles %}
+        </style>
+
+        {% block js %}
+            <script src="{{ STATIC_URL }}/assets/js/modernizr-1.5.min.js"></script>
+            {% disqus_dev %}
+        {% endblock js %}
+
+        <script>
+            {% block scripts %}
+            {% endblock scripts %}
+        </script>
+    </head>
+    <body>
+        {% filter typogrify %}
+            {% block body %}
+            {% endblock body %}
+        {% endfilter %}
+    </body>
+</html>
+{# vim:set ft=htmldjango: #}
