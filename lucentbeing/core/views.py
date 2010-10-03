@@ -8,7 +8,10 @@ from djournal.models import Entry
 def index(request, template='core/index.html'):
     '''Set up a general context for the front-page.'''
 
-    entry = Entry.public.latest()
+    try:
+        entry = Entry.public.latest()
+    except Entry.DoesNotExist:
+        entry = None
 
     context = {
         'entry': entry,
