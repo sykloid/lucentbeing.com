@@ -11,5 +11,8 @@ django-taggit==0.9.1
 git+http://github.com/lcc/django-typogrify.git#egg=django-typogrify
 djournal==0.5.1
 docutils==0.7
+gunicorn==0.11.1
 ipython==0.10
+meld3==0.6.7
+supervisor==3.0a9
 wsgiref==0.1.2
