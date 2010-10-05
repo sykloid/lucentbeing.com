@@ -6,7 +6,7 @@
 
 {% block navigation %}
     {{ block.super }}
-    <li><a class="tag" href="feed">Subscribe to entries tagged "{{ tag }}"</a></li>
+    <li><a class="tag" href="{% url djournal_tagged_entry_feed tag.slug %}">Subscribe to entries tagged "{{ tag }}"</a></li>
 {% endblock navigation %}
 
 {% block content %}

@@ -6,7 +6,7 @@
 
 {% block navigation %}
     {{ block.super }}
-    <li><a class="feed" href="feed">Subscribe</a></li>
+    <li><a class="feed" href="{% url djournal_entry_feed %}">Subscribe</a></li>
 {% endblock navigation %}
 
 
