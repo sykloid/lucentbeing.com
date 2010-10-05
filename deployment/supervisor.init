@@ -1,0 +1,77 @@
+#! /bin/bash
+
+NAME=supervisord
+SUPERVISORD=/home/sykora/environments/lucentbeing.com/bin/supervisord
+SUPERVISORCTL=/home/sykora/environments/lucentbeing.com/bin/supervisorctl
+PIDFILE=/home/sykora/webapps/lucentbeing/var/pid/supervisord.pid
+OPTS="-c /home/sykora/webapps/lucentbeing/lucentbeing.com/deployment/supervisord.conf"
+PS=$NAME
+TRUE=1
+FALSE=0
+
+source /home/sykora/environments/lucentbeing/bin/activate
+
+test -x $SUPERVISORD || exit 0
+
+is_running() {
+    pidof_daemon
+    PID=$?
+
+    if [ $PID -gt 0 ]; then
+        return 1
+    else
+        return 0
+    fi
+}
+
+pidof_daemon() {
+    PIDS=`pidof -x $PS` || true
+
+    [ -e $PIDFILE ] && PIDS2=`cat $PIDFILE`
+
+    for i in $PIDS; do
+        if [ "$i" = "$PIDS2" ]; then
+            return 1
+        fi
+    done
+
+    return 0
+}
+
+start() {
+    echo "Starting supervisord."
+
+    is_running
+    is_alive=$?
+
+    if [ "$is_alive" -eq $TRUE ]; then
+        echo "supervisord is already running."
+    else
+        $SUPERVISORD $OPTS || echo "failed to start supervisord."
+        echo "OK"
+    fi
+}
+
+stop() {
+    "Stopping supervisord."
+
+    $SUPERVISORCTL $OPTS shutdown || echo "failed to stop supervisord."
+    echo "OK"
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+
+    stop)
+        stop
+        ;;
+
+    restart|reload|force-reload)
+        stop
+        start
+        ;;
+esac
+
+exit 0
