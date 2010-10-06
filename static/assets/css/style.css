@@ -119,6 +119,23 @@ a:hover {
     text-decoration: underline;
 }
 
+table.docutils {
+    border: 1px solid #DFDFDF;
+    margin: 0 auto;
+}
+
+table.docutils th {
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #AEAEAE;
+    padding: 5px;
+}
+
+table.docutils td {
+    border: 1px solid #AEAEAE;
+    padding: 5px;
+}
+
 /* Page Structure */
 
 #canvas {
