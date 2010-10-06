@@ -3,15 +3,15 @@
 body {
     background-color: #FAFAFA;
     color: #333333;
-    font-family: "AurulentSansRegular";
+    font-family: "AurulentSansRegular", sans-serif;
 }
 
 strong {
-    font-family: "AurulentSansBold";
+    font-family: "AurulentSansBold", sans-serif;
 }
 
 em {
-    font-family: "AurulentSansItalic";
+    font-family: "AurulentSansItalic", sans-serif;
 }
 
 sup {
@@ -27,7 +27,7 @@ sub {
 pre {
     background-color: #EEEEEE;
     border-left: 3px solid #DFDFDF;
-    font-family: "InconsolataMedium";
+    font-family: "InconsolataMedium", monospace;
     font-size: 0.80em;
     line-height: 1.5em;;
     margin: 5px;
@@ -36,12 +36,12 @@ pre {
 
 tt {
     background: #EEEEEE;
-    font-family: "InconsolataMedium";
+    font-family: "InconsolataMedium", monospace;
 }
 
 blockquote {
     background: #EEEEEE;
-    font-family: "AurulentSansItalic";
+    font-family: "AurulentSansItalic", sans-serif;
     font-size: 0.85em;
     margin: 5px;
     padding: 5px;
