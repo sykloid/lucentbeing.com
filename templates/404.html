@@ -4,14 +4,32 @@
 
 {% block styles %}
     .error {
+        width: 512px;
+        margin: 0 auto;
+        border-bottom: 1px solid #DFDFDF;
+    }
+
+    .error > hgroup {
         margin-top: 1em;
         text-align: center;
+        border-bottom: 1px solid #DFDFDF;
+        padding-bottom: 10px;
+    }
+
+    .error p {
+        line-height: 1.5em;
+        padding: 10px 0;
     }
 {% endblock styles %}
 
 {% block body %}
-    <div class="error">
-        <h1>404</h1>
-        <h2>Page Not Found.</h2>
-    </div>
+    <section class="error">
+        <hgroup>
+            <h1>404</h1>
+            <h2>Page Not Found.</h2>
+        </hgroup>
+        <p>But don't freak out just yet, there's still a small glimmer of hope. You can head over to the <a href="{% url lucentbeing_index %}">Home Page</a> to check out the latest on this site. Or if you were looking for a blog entry, you can check out the <a href="{% url djournal_entry_index %}">blog index</a> and (hopefully) find what you were looking for.</p>
+
+        <p>I'd even offer you a search box right about now, but I haven't gotten around to that yet. Best stick with Google.</p>
+    </section>
 {% endblock body %}
